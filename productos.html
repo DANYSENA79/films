@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<style>
+     .card{
+            background-color: darkorchid;
+        }
+        .h1{
+            color: black;
+           background-color: aqua;
+        }
+        .p{
+            font-family: monospace;
+            background-color: hotpink;
+            border: 3px solid;
+            text-align: center;
+            }
+            .body{
+                background-color: steelblue;
+            }
+</style>
+</head>
+<body class="body">
+    <header  class="container mt-5  text-center   h1 " >
+        <h1>
+            Carniceria "La Refina"
+        </h1>
+    </header>
+        
+        <p class="p container mt-5  fw-bold"> La Mejor carne de la Zona y Los mejores Precios</p>
+
+        <h2  class="container mt-5 h1 text-center  ">Productos</h2>
+    
+    <div class="card-group container mt-5 card">
+        <div class="card">
+          <img src="./script/img/costilla1.jpg" class="card-img-top" alt="f1">
+          <div class="card-body">
+            <h5 class="card-title">Costilla de Entre Rios</h5>
+            <p class="card-text">Costilla de Ternera</p>
+            <p class="card-text"><small class="text-body-secondary">$5.499</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./script/img/f1.jpg" class="card-img-top" alt="f2">
+          <div class="card-body">
+            <h5 class="card-title">Vacio de Entre Rios </h5>
+            <p class="card-text">Vacio de Ternera</p>
+            <p class="card-text"><small class="text-body-secondary">$5.999</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./script/img/carne-picada.webp" class="card-img-top" alt="f3">
+          <div class="card-body">
+            <h5 class="card-title">Picada</h5>
+            <p class="card-text">Picada Comun y Picada Especial.</p>
+            <p class="card-text"><small class="text-body-secondary">$4.200 y $6.500</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-group container mt-5 card">
+        <div class="card">
+          <img src="./script/img/costeletas.jfif" class="card-img-top" alt="f4">
+          <div class="card-body">
+            <h5 class="card-title">Costeleta</h5>
+            <p class="card-text">Carne de Entre Rios</p>
+            <p class="card-text"><small class="text-body-secondary">$4.999</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./script/img/paleta.jfif" class="card-img-top" alt="f5">
+          <div class="card-body">
+            <h5 class="card-title  fw-bold">Paleta </h5>
+            <p class="card-text">Carne de Entre Rios</p>
+            <p class="card-text"><small class="text-body-secondary">$3.999</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./script/img/osobuco.jfif" class="card-img-top" alt="f6">
+          <div class="card-body">
+            <h5 class="card-title">Osobuco</h5>
+            <p class="card-text">carne Especial.</p>
+            <p class="card-text"><small class="text-body-secondary">$3.499</small></p>
+          </div>
+        </div>
+      </div>
+     
+
+      <div class="container mt-5">
+          
+          <h2 class="text-center " >Formulario de Pedido de Carne</h2>
+          <form class="text-bg-secondary p-3"  action="mailto:danysena101@gmail.com" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend class= "text-center ">Complete los campos</legend>
+                 <div class="form-group ">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                 </div>
+                 <div class="form-group row mt-4 text-bg-dark p-3">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                 </div>
+                 <div class="form-group">
+                    <label for="tipoCarne">Tipo de Carne</label>
+                    <select class="form-control" id="tipoCarne" name="tipoCarne" required>
+                        <option>Carne</option>
+                        <option>Cerdo</option>
+                        <option>Pollo</option>
+                        <option>Cordero</option>
+                    </select>
+                 </div>
+                 <div class="form-group">
+                    <label for="corteCarne">Corte de Carne</label>
+                    <select class="form-control" id="corteCarne" name="corteCarne" required>
+                        <!-- Opciones de Res -->
+                        <optgroup label="Carne">
+                            <option value="5.000">Costilla</option>
+                            <option value="5.500">Vacio</option>
+                            <option value="4.000">Aguja</option>
+                            <option value="4.000">Paleta</option>
+                            <option value="3.500">Osobuco</option>
+                            <option value="4.200">Picada Comun</option>
+                            <option value="6.500">Picada Especial</option>
+                        </optgroup>
+                        <!-- Opciones de Pollo -->
+                        <optgroup label="Pollo">
+                            <option value="2.800">Muslo</option>
+                            <option value="2.500"> Alita</option>
+                            <option value="6.500">Pechuga</option>
+                        </optgroup>
+                        <!-- Opciones de Cerdo -->
+                        <optgroup label="Cerdo">
+                            <option value="4.000">Paleta</option>
+                            <option value="4.500">Costilla</option>
+                            <option value="4.000">Cuarto</option>
+                        </optgroup>
+                    </select>
+                </div>
+               
+                <div class="form-group">
+                    <label for="cantidad">Cantidad (kg)</label>
+                    <input type="number" class="form-control" id="cantidad" name="cantidad" required oninput="calcularTotal()">
+                </div>
+                <div class="form-group">
+                    <label for="total">Total</label>
+                    <input type="text" class="form-control" id="total" name="total" readonly>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+                 
+            </fieldset>
+        </form>
+    </div>
+    <script>
+
+        
+        function calcularTotal() {
+        const precio = parseFloat(document.getElementById('corteCarne').value);
+        const cantidad = parseFloat(document.getElementById('cantidad').value);
+        const total = precio * cantidad;
+        document.getElementById('total').value = total.toFixed(2);
+    }
+    
+        </script>
+        
+        <h2  class="container mt-5 h1 text-center  ">Envios</h2>
+
+        <div class="card mb-3 container mt-5" style="max-width: 840px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./script/img/enviosdom.jpg" class="img-fluid rounded-start" alt="f7">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Te llevamos a Tu Domicilio</h5>
+                  <p class="card-text">Hace tu pedido oline y te lo llevamos a la puerta de tu casa.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt-5 text-bg-dark p-3">
+            <h2>Formulario de Pedido</h2>
+            <form class="text-bg-secondary p-3"  action="mailto:danysena101@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="Direccion">Direccion</label>
+                    <input type="email" class="form-control" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción del pedido:</label>
+                    <textarea class="form-control" id="descripcion" name="descripcion" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+            </form>
+        </div>
+        <footer class=" container mt-5">&copy; 2024 Daniel Sena.  <span class=   "fs-6 fw-bold ">Freelancer Todos los Derechos Reservados.</span> </footer>
+          
+    </body>
+</html>
